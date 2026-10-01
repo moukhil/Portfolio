@@ -1,0 +1,28 @@
+{
+  "name": "shaik-moukhil-portfolio",
+  "version": "1.0.0",
+  "description": "Full-Stack Developer Portfolio for Shaik Moukhil - React, Express, MongoDB",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix client",
+    "install-all": "npm install && npm install --prefix server && npm install --prefix client"
+  },
+  "keywords": [
+    "portfolio",
+    "fullstack",
+    "react",
+    "express",
+    "mongodb",
+    "spring-boot",
+    "java"
+  ],
+  "author": "Shaik Moukhil",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
